@@ -1,0 +1,61 @@
+Authors:
+David Rice
+Sean Kelleher**
+Edward Pryor
+Kamaal Gilkes
+
+Fried Rice coding standards:
+method names                -                   camel case (example: theBigDig())
+curly brace placement       -                   end of line (example: theBigDig() {)
+if statement/loop spacing   -                   space between things (example: if ( testone == testtwo ) {)
+Final variables             -                   at top of file and ALL CAPS
+main location               -                   at the bottom of the file
+
+use correct public/private/protected fields
+force use of setters/getters (accessors/mutators)
+
+comments:
+    - top of document (template)
+      /*
+       * name of file:
+       * Authors: <list of authors, comma seperated>
+       * Last updated: <date> <time> <by author name>
+       * <Detailed description of file, could be one or more paragraphs>
+       */
+    
+    - Class commenting - this needs to be right above the class
+        /** <one or more lines like this> */
+
+    - Method commenting - this needs to be right above the method
+        /** <one or more lines like this> */
+
+    - Working area
+      /* FIX ME */
+
+      
+      junit.framework.ComparisonFailure: expected:<58 76[ 66 68 57H 57V 58H 58V 48H 48V 49H 49V ]> but was:<58 76[, 66, 68]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at junit.framework.TestCase.assertEquals(TestCase.java:269)
+	at test.DecisionTreeTester.testPlayerTwoFail(DecisionTreeTester.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+      	
